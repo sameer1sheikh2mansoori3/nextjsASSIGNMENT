@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Box from './components/Box';
 
 //page.js
 
@@ -49,6 +50,24 @@ export default function Home() {
           </div>
         </div>
       </nav>
+      <div className="d-flex ">
+        
+
+
+
+<div className="d-flex justify-content-center align-items-center border w-100 vh-100">
+  <div className="d-flex flex-column">
+    <Box headings={'People'} paragraph={'loremsaaufha asjd;au sa;dh'}/>
+    <Box headings={'People'} paragraph={'loremsaaufha asjd;au sa;dh'}/>
+  </div>
+  <div className="d-flex flex-column">
+  <Box headings={'People'}  paragraph={'loremsaaufha asjd;au sa;dh'}/>
+  <Box headings={'People'} paragraph={'loremsaaufha asjd;au sa;dh'}/>
+  </div>
+</div>
+
+
+      </div>
 
      
     </div>

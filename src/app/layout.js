@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import  "bootstrap/dist/css/bootstrap.min.css"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,7 +12,42 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid  d-flex justify-content-between">
+         
+          <form className="d-flex" role="search">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+         
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Explore
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Hobbies
+                </a>
+              </li>
+              
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      {children}</body>
     </html>
   );
 }
